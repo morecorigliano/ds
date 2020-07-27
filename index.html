@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitally Speaking Labs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png">
+</head>
+<body>
+
+    <main>
+
+        <div id="intro-wrapper">
+            <div id="intro">
+            <h1><span id="d">D</span><span id="s"> S</span><span id="labs"></span></h1>
+            <p id="us">We are a closed-door, Buenos Aires based software factory working towards building a more sustainable and inclusive future for generations to come by means of innovative technology.</p>
+            </div>
+            <a href="#contacto" id="arrow-wrapper">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 96 50" style="enable-background:new 0 0 96 50;" xml:space="preserve" id="arrow">
+                <style type="text/css">
+                .st0{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                </style>
+                <defs>
+                </defs>
+                <polyline class="st0" points="2,2 47,48 94,2 "/>
+            </svg>
+            </a>
+        </div>
+
+        <div id="contacto">
+            <div id="join">
+                <h2>Join us!</h2>
+                <p>Send us your C.V at</p>
+                <a href="mailto:humanresources@dsklabs.com">humanresources@dsklabs.com
+                </a>
+            </div>
+            <p id="or">Or</p>
+            <div id="contacto-form">
+                <h2>Contact us</h2>
+                <form action="contacto.php" method="post" enctype="multipart/form-data" id="formulario">
+                    <div class="form">
+                        <input type="text" name="nombre" required>
+                        <label for="nombre" class="moving-label">Name</label>
+                    </div>
+                    <div class="form">
+                        <input type="email" name="correo" required>
+                        <label for="correo" class="moving-label">Email</label>
+                    </div>
+                    <div class="form">
+                    <label for="mensaje" class="label-text">How can we help?</label>
+                    <textarea class="form-control" name="mensaje" id="mensaje"></textarea>
+                    </div>
+                    <input type="submit" value="send" id="btn-enviar">
+                </form>
+            </div>
+        </div>
+
+    </main>
+    
+</body>
+<script src="js/index.js"></script>
+</html>
