@@ -7,32 +7,46 @@ html {
   font-size: 2.5vw; }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   box-sizing: border-box;
-  background-color: #eee; }
+  background-color: #DBDBDB; }
   body a {
     text-decoration: none; }
   body svg {
     display: block; }
 
+main {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+
 #intro-wrapper {
-  background-color: #1B1B7A;
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative; }
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  #intro-wrapper video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1000; }
   #intro-wrapper #arrow-wrapper {
     position: absolute;
     bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0; }
-    #intro-wrapper #arrow-wrapper svg {
-      width: 1.5rem;
-      animation: moveUpDown 1s infinite ease-in-out; }
+  #intro-wrapper svg {
+    width: 1.5rem;
+    animation: moveUpDown 1s infinite ease-in-out; }
 
 @keyframes moveUpDown {
   0% {
@@ -52,7 +66,7 @@ body {
   padding: 0 3rem; }
   #intro h1 {
     font-family: 'Six Caps', sans-serif;
-    color: white;
+    color: #DBDBDB;
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.2;
@@ -60,75 +74,77 @@ body {
     text-transform: uppercase;
     animation: scaleDown .5s forwards ease-in;
     animation-delay: 1s;
-    transform-origin: top center;
+    transform-origin: center center;
     text-align: center; }
     #intro h1 #labs {
-      color: #A3A3A3;
+      color: #848484;
       transform: scale(0);
       opacity: 0;
       transition: all 0.3s cubic-bezier(0.18, 0.57, 0.5, 1.03); }
   #intro p {
     transition: all 0.8s cubic-bezier(0.18, 0.57, 0.5, 1.03);
-    color: white;
-    font-size: 0.6rem;
+    color: #DBDBDB;
+    font-size: 0.5rem;
     font-weight: 300;
     line-height: 1.2;
     letter-spacing: 0.03rem;
     width: 65%;
     text-align: center;
-    font-style: italic;
     transform: translateY(2rem);
     opacity: 0;
-    margin-top: 1.5rem; }
+    margin-top: 0; }
 
 @keyframes scaleDown {
   to {
     font-size: 2rem; } }
 
 #contacto {
-  background-color: #eee;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem 0; }
+  padding: 3rem 0;
+  position: relative; }
   #contacto h2 {
+    font-family: 'Six Caps', sans-serif;
     width: 100%;
-    color: #1B1B7A;
-    font-size: 1.3rem;
-    font-weight: 700;
+    color: #DBDBDB;
+    font-size: 1.2rem;
+    font-weight: 600;
     line-height: 1.5;
-    letter-spacing: 0.06rem;
-    font-style: italic;
+    letter-spacing: 0.4rem;
     text-align: center;
-    margin-bottom: .7rem; }
+    margin-bottom: .7rem;
+    text-transform: uppercase; }
+  #contacto #particles-js {
+    background-color: #010019;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden; }
 
 #join {
-  text-align: center; }
+  z-index: 1;
+  text-align: center;
+  margin-bottom: 3rem; }
   #join p {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     font-weight: 300;
     line-height: 1.2;
     letter-spacing: 0.03rem;
-    color: black; }
+    color: #DBDBDB; }
   #join a {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: 0.03rem;
-    color: black; }
-
-#or {
-  text-align: center;
-  font-size: 0.8rem;
-  font-weight: 400;
-  line-height: 1.2;
-  letter-spacing: 0.03rem;
-  color: #686868;
-  text-transform: uppercase;
-  margin: 1.5rem 0 1rem 0; }
+    color: #DBDBDB; }
 
 #contacto-form {
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -160,7 +176,7 @@ body {
       font-weight: 300;
       line-height: 1;
       letter-spacing: 0.03rem;
-      color: black; }
+      color: #DBDBDB; }
     #formulario .form .moving-label {
       font-size: 0.5rem;
       font-weight: 300;
@@ -176,23 +192,21 @@ body {
       #formulario .form .moving-label.filled {
         transform: translate(-0.3rem, 1rem);
         font-size: 0.4rem;
-        color: black; }
+        color: #DBDBDB; }
     #formulario .form input:focus ~ label {
       transform: translate(-0.3rem, 1rem);
       font-size: 0.4rem;
-      color: black; }
+      color: #DBDBDB; }
   #formulario #btn-enviar {
     width: 100%;
     background-color: transparent;
-    border: none;
-    background-color: #1B1B7A;
-    color: #eee;
+    border: 0.01rem solid #DBDBDB;
+    color: #DBDBDB;
     text-transform: uppercase;
     font-size: 0.4rem;
     font-weight: 300;
     line-height: 1;
     letter-spacing: 0.03rem;
-    text-transform: capitalize;
     outline: none;
     border-radius: 0.15rem;
     padding: 0.5rem;
@@ -206,6 +220,9 @@ body {
     width: 90vw; }
   #intro-wrapper #arrow-wrapper {
     bottom: 4rem; }
+  #intro-wrapper video {
+    width: 100vw;
+    height: 100vh; }
   #intro p {
     width: 90%; } }
 
@@ -214,6 +231,9 @@ body {
     font-size: 5vw; }
   #intro-wrapper {
     height: 150vh; }
+    #intro-wrapper video {
+      width: 100vw;
+      height: 150vh; }
     #intro-wrapper #arrow-wrapper {
       bottom: 1rem; } }
 

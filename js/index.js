@@ -39,6 +39,7 @@ setTimeout(function typeWriter() {
 setTimeout(function() {
     document.getElementById("labs").style.transform = "scale(1)";
     document.getElementById("labs").style.opacity = "1";
+    document.getElementById("us").style.marginTop = "1.5rem";
 }, 3500);
 
 setTimeout(function() {
