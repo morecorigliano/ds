@@ -213,6 +213,34 @@ main {
     cursor: pointer;
     -webkit-appearance: none; }
 
+#not-found {
+  height: 100vh;
+  width: 100%;
+  background: url(../img/404error.jpeg) no-repeat fixed center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #not-found h1 {
+    font-family: 'Six Caps', sans-serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.03rem;
+    text-transform: uppercase; }
+  #not-found a {
+    color: white;
+    font-size: 0.6rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.03rem;
+    text-transform: uppercase;
+    border: 0.05rem solid white;
+    padding: .5rem;
+    margin-top: 1rem; }
+
 @media screen and (max-width: 1024px) {
   html {
     font-size: 6vw; }
