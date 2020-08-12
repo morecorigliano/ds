@@ -50,3 +50,18 @@ setTimeout(function() {
 setTimeout(function() {
     document.getElementById("arrow-wrapper").style.opacity = "1";
 }, 5000);
+
+var arrowContact = document.getElementById("arrow-contact");
+var formulario = document.getElementById("formulario");
+var arrowClicks = 1;
+
+arrowContact.addEventListener("click", function(){
+    arrowClicks++;
+    if(arrowClicks % 2 == 0){
+        formulario.style.display = "block";
+        arrowContact.style.transform = "rotate(180deg)";
+    }else{
+        formulario.style.display = "none";
+        arrowContact.style.transform = "rotate(0deg)";
+    }
+})

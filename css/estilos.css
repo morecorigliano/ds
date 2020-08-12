@@ -7,8 +7,9 @@ html {
   font-size: 2.5vw; }
 
 body {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Mukta Malar', sans-serif;
   box-sizing: border-box;
+  overflow-x: hidden;
   background-color: #DBDBDB; }
   body a {
     text-decoration: none; }
@@ -32,7 +33,7 @@ main {
   height: 100%; }
   #intro-wrapper video {
     width: 100%;
-    height: auto;
+    height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -100,10 +101,8 @@ main {
 
 #contacto {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem 0;
+  flex-direction: row;
+  padding: 3rem 3rem;
   position: relative; }
   #contacto h2 {
     font-family: 'Six Caps', sans-serif;
@@ -117,7 +116,7 @@ main {
     margin-bottom: .7rem;
     text-transform: uppercase; }
   #contacto #particles-js {
-    background-color: #010019;
+    background: linear-gradient(130deg, #090b19 0%, #090b18 10%, #040407 27%, #010102 40%, #010102 54%, #050407 69%, #010102 84%, #010102 100%);
     position: absolute;
     top: 0;
     left: 0;
@@ -127,9 +126,9 @@ main {
     overflow: hidden; }
 
 #join {
+  width: 50%;
   z-index: 1;
-  text-align: center;
-  margin-bottom: 3rem; }
+  text-align: center; }
   #join p {
     font-size: 0.6rem;
     font-weight: 300;
@@ -144,13 +143,27 @@ main {
     color: #DBDBDB; }
 
 #contacto-form {
+  width: 50%;
   z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  #contacto-form p {
+    font-size: 0.6rem;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 0.03rem;
+    color: #DBDBDB;
+    margin-bottom: .8rem; }
+  #contacto-form #arrow-contact {
+    transition: transform 0.3s cubic-bezier(0.18, 0.57, 0.5, 1.03);
+    width: 1rem;
+    margin-bottom: .7rem;
+    cursor: pointer; }
 
 #formulario {
+  display: none;
   width: 35vw; }
   #formulario .form {
     position: relative;
@@ -246,11 +259,26 @@ main {
     font-size: 6vw; }
   #formulario {
     width: 90vw; }
+  #contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem; }
+    #contacto #join {
+      width: 100%;
+      margin-top: 3rem; }
+    #contacto #contacto-form {
+      width: 100%; }
+    #contacto #particles-js {
+      background: linear-gradient(51deg, #040407 0%, #040306 25%, #030205 50%, #010102 75%, #010102 100%); }
   #intro-wrapper #arrow-wrapper {
     bottom: 4rem; }
   #intro-wrapper video {
     width: 100vw;
     height: 100vh; }
+  #intro-wrapper #d {
+    display: block; }
   #intro p {
     width: 90%; } }
 
@@ -263,7 +291,9 @@ main {
       width: 100vw;
       height: 150vh; }
     #intro-wrapper #arrow-wrapper {
-      bottom: 1rem; } }
+      bottom: 1rem; }
+    #intro-wrapper #d {
+      display: inline-block; } }
 
 @media screen and (min-width: 767px) and (max-width: 1024px) {
   html {
