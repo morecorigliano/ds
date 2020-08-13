@@ -75,7 +75,7 @@ main {
     text-transform: uppercase;
     animation: scaleDown .5s forwards ease-in;
     animation-delay: 1s;
-    transform-origin: center center;
+    transform-origin: top center;
     text-align: center; }
     #intro h1 #labs {
       color: #848484;
@@ -102,10 +102,12 @@ main {
 #contacto {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 3rem 3rem;
-  position: relative; }
+  position: relative;
+  height: 100vh; }
   #contacto h2 {
-    font-family: 'Six Caps', sans-serif;
     width: 100%;
     color: #DBDBDB;
     font-size: 1.2rem;
@@ -159,7 +161,7 @@ main {
   #contacto-form #arrow-contact {
     transition: transform 0.3s cubic-bezier(0.18, 0.57, 0.5, 1.03);
     width: 1rem;
-    margin-bottom: .7rem;
+    margin-bottom: .4rem;
     cursor: pointer; }
 
 #formulario {
@@ -250,7 +252,7 @@ main {
     line-height: 1.2;
     letter-spacing: 0.03rem;
     text-transform: uppercase;
-    border: 0.05rem solid white;
+    border: 0.08rem solid white;
     padding: .5rem;
     margin-top: 1rem; }
 
@@ -293,7 +295,9 @@ main {
     #intro-wrapper #arrow-wrapper {
       bottom: 1rem; }
     #intro-wrapper #d {
-      display: inline-block; } }
+      display: inline-block; }
+  #contacto {
+    height: auto !important; } }
 
 @media screen and (min-width: 767px) and (max-width: 1024px) {
   html {

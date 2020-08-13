@@ -53,6 +53,7 @@ setTimeout(function() {
 
 var arrowContact = document.getElementById("arrow-contact");
 var formulario = document.getElementById("formulario");
+var contacto = document.getElementById("contacto");
 var arrowClicks = 1;
 
 arrowContact.addEventListener("click", function(){
@@ -60,8 +61,10 @@ arrowContact.addEventListener("click", function(){
     if(arrowClicks % 2 == 0){
         formulario.style.display = "block";
         arrowContact.style.transform = "rotate(180deg)";
+        contacto.style.height = "auto";
     }else{
         formulario.style.display = "none";
         arrowContact.style.transform = "rotate(0deg)";
+        contacto.style.height = "";
     }
 })
