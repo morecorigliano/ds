@@ -106,7 +106,8 @@ main {
   align-items: center;
   padding: 3rem 3rem;
   position: relative;
-  height: 100vh; }
+  height: 100vh;
+  background-color: black; }
   #contacto h2 {
     width: 100%;
     color: #DBDBDB;
@@ -117,15 +118,6 @@ main {
     text-align: center;
     margin-bottom: .7rem;
     text-transform: uppercase; }
-  #contacto #particles-js {
-    background: linear-gradient(130deg, #090b19 0%, #090b18 10%, #040407 27%, #010102 40%, #010102 54%, #050407 69%, #010102 84%, #010102 100%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    overflow: hidden; }
 
 #join {
   width: 50%;
