@@ -15,7 +15,6 @@
     <main>
 
         <div id="intro-wrapper">
-            <video src="img/banner.mp4" loop muted autoplay type="video/webm"></video>
             <div id="intro">
             <h1><span id="d">D</span><span id="s"> S</span><span id="labs"></span></h1>
             <p id="us">We are a closed-door, Buenos Aires based software factory working towards building a more sustainable and inclusive future for generations to come by means of innovative technology.</p>
@@ -74,4 +73,20 @@
     <script src="js/app.js"></script>
 </body>
 <script src="js/index.js"></script>
+<script src="js/three.r119.min.js"></script>
+<script src="js/vanta.waves.min.js"></script>
+<script>
+    VANTA.WAVES({
+      el: "#intro-wrapper",
+      mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x4061d,
+        shininess: 26.00
+    })
+</script>
 </html>
