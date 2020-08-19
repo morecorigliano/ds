@@ -10,7 +10,7 @@ body {
   font-family: 'Mukta Malar', sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
-  background-color: #DBDBDB; }
+  background-color: #ffffff; }
   body a {
     text-decoration: none; }
   body svg {
@@ -67,25 +67,25 @@ main {
   padding: 0 3rem; }
   #intro h1 {
     font-family: 'Six Caps', sans-serif;
-    color: #DBDBDB;
+    color: #ffffff;
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.4rem;
     text-transform: uppercase;
-    animation: scaleDown .5s forwards ease-in;
-    animation-delay: 1s;
-    transform-origin: top center;
+    animation: scaleDown .5s forwards linear;
+    animation-delay: .5s;
+    transform-origin: top left;
     text-align: center; }
     #intro h1 #labs {
-      color: #848484;
+      color: #1B1B7A;
       transform: scale(0);
       opacity: 0;
       transition: all 0.3s cubic-bezier(0.18, 0.57, 0.5, 1.03); }
   #intro p {
     transition: all 0.8s cubic-bezier(0.18, 0.57, 0.5, 1.03);
-    color: #DBDBDB;
-    font-size: 0.5rem;
+    color: #ffffff;
+    font-size: 0.7rem;
     font-weight: 300;
     line-height: 1.2;
     letter-spacing: 0.03rem;
@@ -106,11 +106,10 @@ main {
   align-items: center;
   padding: 3rem 3rem;
   position: relative;
-  height: 100vh;
-  background-color: black; }
+  height: 100vh; }
   #contacto h2 {
     width: 100%;
-    color: #DBDBDB;
+    color: #ffffff;
     font-size: 1.2rem;
     font-weight: 600;
     line-height: 1.5;
@@ -128,13 +127,13 @@ main {
     font-weight: 300;
     line-height: 1.2;
     letter-spacing: 0.03rem;
-    color: #DBDBDB; }
+    color: #ffffff; }
   #join a {
     font-size: 0.5rem;
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: 0.03rem;
-    color: #DBDBDB; }
+    color: #ffffff; }
 
 #contacto-form {
   width: 50%;
@@ -148,13 +147,23 @@ main {
     font-weight: 300;
     line-height: 1.2;
     letter-spacing: 0.03rem;
-    color: #DBDBDB;
+    color: #ffffff;
     margin-bottom: .8rem; }
   #contacto-form #arrow-contact {
     transition: transform 0.3s cubic-bezier(0.18, 0.57, 0.5, 1.03);
     width: 1rem;
     margin-bottom: .4rem;
     cursor: pointer; }
+
+#canvas-basic {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
 
 #formulario {
   display: none;
@@ -183,7 +192,7 @@ main {
       font-weight: 300;
       line-height: 1;
       letter-spacing: 0.03rem;
-      color: #DBDBDB; }
+      color: #ffffff; }
     #formulario .form .moving-label {
       font-size: 0.5rem;
       font-weight: 300;
@@ -199,16 +208,16 @@ main {
       #formulario .form .moving-label.filled {
         transform: translate(-0.3rem, 1rem);
         font-size: 0.4rem;
-        color: #DBDBDB; }
+        color: #ffffff; }
     #formulario .form input:focus ~ label {
       transform: translate(-0.3rem, 1rem);
       font-size: 0.4rem;
-      color: #DBDBDB; }
+      color: #ffffff; }
   #formulario #btn-enviar {
     width: 100%;
     background-color: transparent;
-    border: 0.01rem solid #DBDBDB;
-    color: #DBDBDB;
+    border: 0.01rem solid #ffffff;
+    color: #ffffff;
     text-transform: uppercase;
     font-size: 0.4rem;
     font-weight: 300;

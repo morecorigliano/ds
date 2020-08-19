@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <main>
+    <mains>
 
         <div id="intro-wrapper">
             <div id="intro">
@@ -31,7 +31,7 @@
             </a>
         </div>
 
-        <div id="contacto" style="background-color: black">
+        <div id="contacto" style="background-color: #110034">
             <div id="contacto-form" data-aos="zoom-in-up">
                 <h2>Contact us</h2>
                 <p>Our team is ready to answer!</p>
@@ -67,7 +67,7 @@
             </div>
         </div>
 
-    </main>
+    </mains>
 </body>
 <script src="js/index.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -77,21 +77,23 @@
 })
 </script>
 <script src="js/three.r119.min.js"></script>
-<script src="js/vanta.halo.min.js"></script>
+<script src="js/vanta.net.min.js"></script>
 <script>
-VANTA.HALO({
+VANTA.NET({
   el: "#intro-wrapper",
   mouseControls: true,
   touchControls: true,
   gyroControls: false,
   minHeight: 200.00,
   minWidth: 200.00,
-  baseColor: 0x1b1b1b,
-  backgroundColor: 0x0,
-  amplitudeFactor: 0.5,
-  xOffset: 0.05,
-  yOffset: 0.08,
-  size: 1.70
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x333452,
+  backgroundColor: 0x110034,
+  points: 14.00,
+  maxDistance: 19.00,
+  spacing: 14.00
 })
+</script>
 </script>
 </html>

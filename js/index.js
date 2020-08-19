@@ -24,7 +24,7 @@ var i = 0;
 var txt = 'igitally';
 var txtTwo = "peaking";
 var txtThree = "labs";
-var speed = 200;
+var speed = 150;
 
 setTimeout(function typeWriter() {
   if (i < txt.length) {
@@ -34,22 +34,22 @@ setTimeout(function typeWriter() {
     setTimeout(typeWriter, speed);
   }
   document.getElementById("labs").innerHTML = " Labs";
-}, 1600);
+}, 1500);
 
 setTimeout(function() {
     document.getElementById("labs").style.transform = "scale(1)";
     document.getElementById("labs").style.opacity = "1";
     document.getElementById("us").style.marginTop = "1.5rem";
-}, 3500);
+}, 3000);
 
 setTimeout(function() {
     document.getElementById("us").style.transform = "translateY(0)";
     document.getElementById("us").style.opacity = "1";
-}, 4500);
+}, 3500);
 
 setTimeout(function() {
     document.getElementById("arrow-wrapper").style.opacity = "1";
-}, 5000);
+}, 4000);
 
 var arrowContact = document.getElementById("arrow-contact");
 var formulario = document.getElementById("formulario");

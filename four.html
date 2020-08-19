@@ -13,7 +13,7 @@
 <body>
 
     <main>
-
+        <canvas id="canvas-basic"></canvas>
         <div id="intro-wrapper">
             <div id="intro">
             <h1><span id="d">D</span><span id="s"> S</span><span id="labs"></span></h1>
@@ -30,8 +30,7 @@
             </svg>
             </a>
         </div>
-
-        <div id="contacto" style="background-color: black">
+        <div id="contacto">
             <div id="contacto-form" data-aos="zoom-in-up">
                 <h2>Contact us</h2>
                 <p>Our team is ready to answer!</p>
@@ -76,22 +75,21 @@
   duration: 700,
 })
 </script>
-<script src="js/three.r119.min.js"></script>
-<script src="js/vanta.halo.min.js"></script>
+<script src="js/granim.min.js"></script>
 <script>
-VANTA.HALO({
-  el: "#intro-wrapper",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  baseColor: 0x1b1b1b,
-  backgroundColor: 0x0,
-  amplitudeFactor: 0.5,
-  xOffset: 0.05,
-  yOffset: 0.08,
-  size: 1.70
-})
+var granimInstance = new Granim({
+    element: '#canvas-basic',
+    direction: 'diagonal',
+    isPausedWhenNotInView: true,
+    states : {
+        "default-state": {
+            gradients: [
+                ['#110130', '#1A1363'],
+                ['#000', '#11052D'],
+                ['#1A1363', '#000']
+            ]
+        }
+    }
+});
 </script>
 </html>
