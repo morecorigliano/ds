@@ -49,7 +49,7 @@ main {
     width: 1.5rem;
     -webkit-animation: moveUpDown 1s infinite ease-in-out; }
 
-@keyframes moveUpDown {
+@-webkit-keyframes moveUpDown {
   0% {
     transform: translateY(-2vh); }
   50% {
@@ -81,9 +81,9 @@ main {
       color: #1B1B7A;
       -webkit-transform: scale(0);
       opacity: 0;
-      transition: all 0.3s cubic-bezier(0.18, 0.57, 0.5, 1.03); }
+      -webkit-transition: all 0.3s cubic-bezier(0.18, 0.57, 0.5, 1.03); }
   #intro p {
-    transition: all 0.8s cubic-bezier(0.18, 0.57, 0.5, 1.03);
+    -webkit-transition: all 0.8s cubic-bezier(0.18, 0.57, 0.5, 1.03);
     color: #ffffff;
     font-size: 0.7rem;
     font-weight: 300;
@@ -95,7 +95,7 @@ main {
     opacity: 0;
     margin-top: 0; }
 
-@keyframes scaleDown {
+@-webkit-keyframes scaleDown {
   to {
     font-size: 2rem; } }
 
@@ -150,7 +150,7 @@ main {
     color: #ffffff;
     margin-bottom: .8rem; }
   #contacto-form #arrow-contact {
-    transition: transform 0.3s cubic-bezier(0.18, 0.57, 0.5, 1.03);
+    -webkit-transition: transform 0.3s cubic-bezier(0.18, 0.57, 0.5, 1.03);
     width: 1rem;
     margin-bottom: .4rem;
     cursor: pointer; }
@@ -202,7 +202,7 @@ main {
       bottom: 0.3rem;
       left: 0.3rem;
       display: block;
-      transition: transform 0.3s cubic-bezier(0.18, 0.57, 0.5, 1.03);
+      -webkit-transition: transform 0.3s cubic-bezier(0.18, 0.57, 0.5, 1.03);
       color: black;
       pointer-events: none; }
       #formulario .form .moving-label.filled {
@@ -301,7 +301,3 @@ main {
       display: inline-block; }
   #contacto {
     height: auto !important; } }
-
-@media screen and (min-width: 767px) and (max-width: 1024px) {
-  html {
-    font-size: 4vw; } }
