@@ -1,3 +1,5 @@
+////// suavizar el scroll en anchors de href ////////
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -7,6 +9,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+////// animación de titulo de inputs en el form ////////
 
 var formInputs = document.getElementsByClassName("form");
 
@@ -19,6 +23,8 @@ for (var i = 0; i < formInputs.length; i++) {
         }
     });
 }
+
+////// animaciónes del banner  ////////
 
 var i = 0;
 var txt = 'igitally';
@@ -50,6 +56,8 @@ setTimeout(function() {
 setTimeout(function() {
     document.getElementById("arrow-wrapper").style.opacity = "1";
 }, 4000);
+
+////// abrir/cerrar formulario de contacto  ////////
 
 var arrowContact = document.getElementById("arrow-contact");
 var formulario = document.getElementById("formulario");
