@@ -32,6 +32,10 @@ var txtTwo = "peaking";
 var txtThree = "labs";
 var speed = 150;
 
+window.onload = function(){
+    document.querySelector("h1").style.fontSize = "2rem";
+}
+
 setTimeout(function typeWriter() {
   if (i < txt.length) {
     document.getElementById("d").innerHTML += txt.charAt(i);

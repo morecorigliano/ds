@@ -28,17 +28,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
-  width: 100%;
-  height: 100%; }
-  #intro-wrapper video {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    z-index: -1000; }
+  position: relative; }
   #intro-wrapper #arrow-wrapper {
     position: absolute;
     bottom: 1rem;
@@ -62,21 +52,23 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;
   width: 100%;
-  padding: 0 3rem; }
+  position: relative; }
   #intro h1 {
+    width: 100%;
     font-family: 'Six Caps', sans-serif;
     color: #ffffff;
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.4rem;
-    text-transform: uppercase;
-    -webkit-animation: scaleDown .5s forwards ease-out;
-    -webkit-animation-delay: .5s;
-    -webkit-transform-origin: top left;
-    text-align: center; }
+    -webkit-transition: all ease-out;
+    -webkit-transition-delay: .5s;
+    -webkit-transition-duration: .5s;
+    -webkit-transform-origin: center center;
+    text-align: center;
+    text-transform: uppercase; }
     #intro h1 #labs {
       color: #1B1B7A;
       -webkit-transform: scale(0);
@@ -94,12 +86,6 @@ main {
     -webkit-transform: translateY(2rem);
     opacity: 0;
     margin-top: 0; }
-
-@-webkit-keyframes scaleDown {
-  0% {
-    font-size: 6rem; }
-  100% {
-    font-size: 2rem; } }
 
 #contacto {
   display: flex;
@@ -277,17 +263,14 @@ main {
       width: 100%; }
     #contacto #particles-js {
       background: linear-gradient(51deg, #040407 0%, #040306 25%, #030205 50%, #010102 75%, #010102 100%); }
-  #intro-wrapper #arrow-wrapper {
-    bottom: 4rem; }
-  #intro-wrapper video {
-    width: 100vw;
-    height: 100vh; }
-  #intro-wrapper #d {
-    display: block; }
-  #intro {
+  #intro-wrapper {
     padding: 1.5rem; }
-    #intro p {
-      width: 100%; } }
+    #intro-wrapper #arrow-wrapper {
+      bottom: 4rem; }
+    #intro-wrapper #d {
+      display: block; }
+  #intro p {
+    width: 100%; } }
 
 @media screen and (orientation: landscape) and (max-width: 1024px) {
   html {
