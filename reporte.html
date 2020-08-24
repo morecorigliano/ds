@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte Bug</title>
+    <style>
+
+        /* Se detectó que el navegador Safari no permite disminuir la fuente de un texto utilizando la propiedad animación de CSS de la siguiente manera: */
+
+        #bug{
+            font-size: 16px;
+            -webkit-animation: resizeFont 1s ease-out forwards;
+            -webkit-animation-delay: 1s;
+        }
+        @-webkit-keyframes resizeFont{
+            to{
+                font-size: 35px
+            }
+        }
+
+        /* Como solución, se eliminó la propiedad animación, se utilizó javascript como trigger, y se añadió la propiedad transición de CSS para que cuando JS agrande el font, el pasaje sea suavizado: */ 
+
+        #fixed{
+            font-size: 16px;
+            -webkit-transition: all ease-out;
+            -webkit-transition-delay: 1s;
+            -webkit-transition-duration: 1s;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <p id="bug"><strong>NO</strong> funciono en Safari!</p>
+
+    <p id="fixed"><strong>SÍ</strong> funciono en Safari!</p>
+    
+</body>
+
+<script>
+
+    /* trigger para que el font se agrande */ 
+    
+    window.onload = function(){
+        document.getElementById("fixed").style.fontSize = "35px";
+    }
+
+</script>
+</html>
