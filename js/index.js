@@ -79,4 +79,4 @@ arrowContact.addEventListener("click", function(){
         arrowContact.style.transform = "rotate(0deg)";
         contacto.style.height = "";
     }
-})
+});

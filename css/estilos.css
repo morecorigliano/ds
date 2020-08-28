@@ -90,20 +90,28 @@ main {
 #contacto {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 3rem 3rem;
   position: relative;
   height: 100vh; }
-  #contacto h2 {
+  #contacto .type-wrap {
     width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.4rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: .7rem; }
+  #contacto h2 {
     color: #ffffff;
     font-size: 1.2rem;
     font-weight: 600;
     line-height: 1.5;
     letter-spacing: 0.4rem;
-    text-align: center;
-    margin-bottom: .7rem;
     text-transform: uppercase; }
 
 #join {
